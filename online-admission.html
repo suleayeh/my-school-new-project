@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Online admission form for My-School International Academy Kano." />
+  <meta name="keywords" content="online admission, My-School International Academy, Kano, form" />
+  <title>Online Admission | My-School International Academy Kano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pM8XvBrg1lfSvJaaBJXyB2f1jKLHVB8k1Mdrm1T5GgZ6GffbitG/jzqQOQ7PmS1Iw96xQv7H6+7Gk6d/2Xey0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container navbar fade-up">
+        <a class="brand" href="index.html"><i class="fas fa-school fa-lg" style="color: var(--primary);"></i><div><strong>My-School International Academy</strong><span>Kano, Nigeria</span></div></a>
+        <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="about.html">About</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="academics.html">Academics</a>
+          <a href="news-events.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-secondary theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+          <a class="btn-primary" href="student-portal.html">Student Portal</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy fade-up">
+          <span class="label"><i class="fas fa-file-signature"></i> Online Admission</span>
+          <h1>Complete your online admission application for the next academic year.</h1>
+          <p>Use the form below to submit student details and start the enrollment process.</p>
+        </div>
+        <div class="hero-visual fade-up" style="animation-delay: 0.12s;"><img src="images/staff.svg" alt="Admission illustration" /></div>
+      </section>
+
+      <section class="container" id="admission-form-section">
+        <div class="section-title fade-up"><h2>Admission Form</h2><p>Fill all fields below and upload the student passport photograph.</p></div>
+        <div class="form-card fade-up" style="animation-delay: 0.1s;">
+          <form id="admission-form">
+            <div class="form-grid">
+              <div class="form-group"><label for="student-name">Student Full Name</label><input id="student-name" name="studentName" data-required="true" type="text" placeholder="Full name" /></div>
+              <div class="form-group"><label for="gender">Gender</label><select id="gender" name="gender" data-required="true"><option value="">Select gender</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+              <div class="form-group"><label for="birth-date">Date of Birth</label><input id="birth-date" name="birthDate" data-required="true" type="date" /></div>
+              <div class="form-group"><label for="guardian-name">Parent/Guardian Name</label><input id="guardian-name" name="guardianName" data-required="true" type="text" placeholder="Parent or guardian" /></div>
+              <div class="form-group"><label for="phone">Phone Number</label><input id="phone" name="phone" data-required="true" type="tel" placeholder="+234 803 000 0000" /></div>
+              <div class="form-group"><label for="email">Email Address</label><input id="email" name="email" data-required="true" type="email" placeholder="you@example.com" /></div>
+              <div class="form-group full"><label for="address">Address</label><textarea id="address" name="address" data-required="true" placeholder="Residential address"></textarea></div>
+              <div class="form-group"><label for="previous-school">Previous School</label><input id="previous-school" name="previousSchool" data-required="true" type="text" placeholder="Previous school" /></div>
+              <div class="form-group"><label for="class-apply">Class Applying For</label><select id="class-apply" name="classApplying" data-required="true"><option value="">Select class</option><option>JSS1</option><option>JSS2</option><option>JSS3</option><option>SS1</option><option>SS2</option><option>SS3</option></select></div>
+              <div class="form-group"><label for="passport-upload">Passport Upload</label><input id="passport-upload" name="passportUpload" data-required="true" type="file" accept="image/*" /></div>
+            </div>
+            <div class="form-actions"><button class="btn-primary" type="submit">Submit Application</button></div>
+            <p class="form-feedback"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><h4>Apply Online</h4><p>Use our online form for fast admission processing.</p></div>
+          <div><h4>Links</h4><div class="footer-links"><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="academics.html">Academics</a><a href="contact.html">Contact</a></div></div>
+          <div><h4>Contact</h4><div class="footer-links"><a href="mailto:info@alnoorkano.edu.ng">info@alnoorkano.edu.ng</a><a href="tel:+2348030000000">+234 803 000 0000</a><a href="#">Suleiman Road, Kano</a></div></div>
+          <div><h4>Social</h4><div class="footer-links social-list"><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><a href="#"><i class="fab fa-twitter"></i> Twitter</a><a href="#"><i class="fab fa-instagram"></i> Instagram</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 My-School International Academy Kano</span><span>Complete your admission application today.</span></div>
+      </div>
+    </footer>
+  </div>
+  <button class="chat-widget" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></button>
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <div class="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image preview"><i class="fas fa-times"></i></button><img src="" alt="Expanded gallery image" /></div>
+  <script src="script.js"></script>
+</body>
+</html>
+

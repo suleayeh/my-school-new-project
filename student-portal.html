@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student portal login UI for My-School International Academy Kano." />
+  <meta name="keywords" content="My-School International Academy, student portal, login, Kano" />
+  <title>Student Portal | My-School International Academy Kano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pM8XvBrg1lfSvJaaBJXyB2f1jKLHVB8k1Mdrm1T5GgZ6GffbitG/jzqQOQ7PmS1Iw96xQv7H6+7Gk6d/2Xey0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container navbar fade-up">
+        <a class="brand" href="index.html"><i class="fas fa-school fa-lg" style="color: var(--primary);"></i><div><strong>My-School International Academy</strong><span>Kano, Nigeria</span></div></a>
+        <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="about.html">About</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="academics.html">Academics</a>
+          <a href="news-events.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-secondary theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+          <a class="btn-primary" href="online-admission.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy fade-up">
+          <span class="label"><i class="fas fa-user-lock"></i> Student Portal</span>
+          <h1>Student login interface designed for easy access and modern campus tools.</h1>
+          <p>Preview the portal UI created to support students with announcements, classes and coursework.</p>
+        </div>
+        <div class="hero-visual fade-up" style="animation-delay: 0.12s;"><img src="images/school-building.svg" alt="Student portal illustration" /></div>
+      </section>
+
+      <section class="container" id="login-preview">
+        <div class="section-title fade-up"><h2>Portal Login</h2><p>This login page is a secure entry point for students to access dashboard features.</p></div>
+        <div class="grid-2 fade-up" style="gap: 1.5rem;">
+          <div class="form-card">
+            <h3>Student Login</h3>
+            <form>
+              <div class="form-group"><label for="portal-email">School Email</label><input id="portal-email" type="email" placeholder="student@alnoorkano.edu.ng" /></div>
+              <div class="form-group"><label for="portal-password">Password</label><input id="portal-password" type="password" placeholder="Enter your password" /></div>
+              <div class="form-actions"><button class="btn-primary" type="submit">Sign In</button></div>
+            </form>
+          </div>
+          <div class="dashboard-card">
+            <h3>Dashboard Preview</h3>
+            <div class="dashboard-grid">
+              <div class="dashboard-metric"><strong>8</strong><span>Upcoming Assignments</span></div>
+              <div class="dashboard-metric"><strong>4</strong><span>Announcements</span></div>
+              <div class="dashboard-metric"><strong>14</strong><span>Classes Today</span></div>
+              <div class="dashboard-metric"><strong>96%</strong><span>Attendance Rate</span></div>
+            </div>
+            <p class="small-text" style="margin-top: 1rem;">A modern portal overview showing key student information at a glance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container banner-card fade-up"><h3>Secure access for academic progress.</h3><p>Students can log in on campus or at home for schedules, resources and announcements.</p></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><h4>Student Portal</h4><p>Login access designed for our school community.</p></div>
+          <div><h4>Useful Links</h4><div class="footer-links"><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="academics.html">Academics</a><a href="news-events.html">News</a></div></div>
+          <div><h4>Contact</h4><div class="footer-links"><a href="mailto:info@alnoorkano.edu.ng">info@alnoorkano.edu.ng</a><a href="tel:+2348030000000">+234 803 000 0000</a><a href="#">Kano State, Nigeria</a></div></div>
+          <div><h4>Follow</h4><div class="footer-links social-list"><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><a href="#"><i class="fab fa-twitter"></i> Twitter</a><a href="#"><i class="fab fa-instagram"></i> Instagram</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 My-School International Academy Kano</span><span>Portal access for students.</span></div>
+      </div>
+    </footer>
+  </div>
+  <button class="chat-widget" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></button>
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <div class="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image preview"><i class="fas fa-times"></i></button><img src="" alt="Expanded gallery image" /></div>
+  <script src="script.js"></script>
+</body>
+</html>
+

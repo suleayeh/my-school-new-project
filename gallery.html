@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery of My-Schhol International Academy Kano with images of campus and school life." />
+  <meta name="keywords" content="My-School International Academy, gallery, Kano, school images" />
+  <title>Gallery | My- School International Academy Kano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pM8XvBrg1lfSvJaaBJXyB2f1jKLHVB8k1Mdrm1T5GgZ6GffbitG/jzqQOQ7PmS1Iw96xQv7H6+7Gk6d/2Xey0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container navbar fade-up">
+        <a class="brand" href="index.html"><i class="fas fa-school fa-lg" style="color: var(--primary);"></i><div><strong>My-School International Academy</strong><span>Kano, Nigeria</span></div></a>
+        <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="about.html">About</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="academics.html">Academics</a>
+          <a href="news-events.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-secondary theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+          <a class="btn-primary" href="student-portal.html">Student Portal</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy fade-up">
+          <span class="label"><i class="fas fa-images"></i> School Gallery</span>
+          <h1>A visual tour of campus life and school spirit in Kano.</h1>
+          <p>Browse our gallery showcasing academic life, campus facilities, and special school events.</p>
+        </div>
+        <div class="hero-visual fade-up" style="animation-delay: 0.12s;"><img src="images/school-building.svg" alt="Gallery hero image" /></div>
+      </section>
+
+      <section class="container" id="gallery-grid">
+        <div class="section-title fade-up"><h2>Campus Moments</h2><p>Click any image to expand with the lightbox preview.</p></div>
+        <div class="gallery-grid fade-up" style="animation-delay: 0.1s;">
+          <div class="gallery-item"><img src="images/hero-school.svg" data-large="images/hero-school.svg" alt="Campus view" /></div>
+          <div class="gallery-item"><img src="images/school-building.svg" data-large="images/school-building.svg" alt="School building" /></div>
+          <div class="gallery-item"><img src="images/staff.svg" data-large="images/staff.svg" alt="Staff group" /></div>
+          <div class="gallery-item"><img src="images/hero-school.svg" data-large="images/hero-school.svg" alt="Students in class" /></div>
+          <div class="gallery-item"><img src="images/school-building.svg" data-large="images/school-building.svg" alt="Learning environment" /></div>
+          <div class="gallery-item"><img src="images/staff.svg" data-large="images/staff.svg" alt="School event" /></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><h4>Gallery</h4><p>Images capture our campus, students and staff.</p></div>
+          <div><h4>Navigate</h4><div class="footer-links"><a href="about.html">About</a><a href="admissions.html">Admissions</a><a href="academics.html">Academics</a><a href="news-events.html">News</a></div></div>
+          <div><h4>Contact</h4><div class="footer-links"><a href="tel:+2348030000000">+234 803 000 0000</a><a href="mailto:info@alnoorkano.edu.ng">info@alnoorkano.edu.ng</a><a href="#">Kano State, Nigeria</a></div></div>
+          <div><h4>Follow</h4><div class="footer-links social-list"><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><a href="#"><i class="fab fa-twitter"></i> Twitter</a><a href="#"><i class="fab fa-instagram"></i> Instagram</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 My-School International Academy Kano</span><span>Discover our campus life.</span></div>
+      </div>
+    </footer>
+  </div>
+  <button class="chat-widget" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></button>
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <div class="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image preview"><i class="fas fa-times"></i></button><img src="" alt="Expanded gallery image" /></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
